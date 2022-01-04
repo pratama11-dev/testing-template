@@ -33,6 +33,7 @@ gem 'image_processing', '>= 1.2'
 gem 'google-analytics-rails', '1.1.1'
 gem 'newrelic_rpm'
 gem 'airbrake'
+gem 'ddtrace', require: 'ddtrace/auto_instrument'
 
 group :development, :test do
   gem 'break'
@@ -60,6 +61,7 @@ group :development do
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails',   require: false
   gem 'capistrano-rbenv',   require: false
+  gem 'capistrano-rails-logs-tail',   require: false
 end
 
 group :test do
